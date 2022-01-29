@@ -69,9 +69,39 @@ header {
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
+h1 {
+  font-size: 52px;
+}
+
+.paragraph-shadow {
+  text-shadow: 0px 0px 4px #000000;
+}
+.title-shadow {
+  text-shadow: 0px 0px 25px #00000080;
+}
+
+.button-main {
+  background-color: #d4b254;
+  color: white;
+  border-radius: 30px;
+  height: 60px;
+  box-shadow: 0px 2px 10px #00000033;
+  letter-spacing: 3px;
+}
+
+.button-main:hover {
+  color: white;
+  background-color: #c8a74b;
+  box-shadow: 0px 2px 5px #00000040;
+}
+
 .button-pill {
   padding: 0.9rem 2.6rem;
   border-radius: 2.6rem;
+}
+
+.color-white {
+  color: white;
 }
 
 .spacing-text {

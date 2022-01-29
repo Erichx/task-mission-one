@@ -26,6 +26,17 @@ header {
   z-index: 1;
 }
 
+.btn-outline-white {
+  color: white;
+  border-color: white;
+  background-color: transparent;
+}
+
+.btn-outline-white:hover {
+  color: #222222;
+  background-color: white;
+}
+
 .carousel-item {
   height: 100vh;
 }

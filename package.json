@@ -1,0 +1,29 @@
+{
+  "name": "task-mission-one",
+  "version": "1.0.0",
+  "description": "Just a task to create a page in html css and js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Erichx/task-mission-one.git"
+  },
+  "keywords": [
+    "test",
+    "html",
+    "js",
+    "css"
+  ],
+  "author": "Erich Casagrande Perusso",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Erichx/task-mission-one/issues"
+  },
+  "homepage": "https://github.com/Erichx/task-mission-one#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "bootstrap": "^5.1.3"
+  }
+}

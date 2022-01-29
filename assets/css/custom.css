@@ -1,0 +1,105 @@
+/*Page*/
+
+#home header * {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+}
+#home header .social-link {
+  margin-left: 1rem;
+  color: white;
+}
+#home header ul li a {
+  color: white;
+}
+#home header .social-link svg {
+  font-size: 16px;
+}
+
+header {
+  display: block;
+  background: transparent;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.carousel-item {
+  height: 100vh;
+}
+.carousel-item .container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.background-slider {
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.image-slide-one {
+  background-image: url("../images/slider/01.png");
+}
+.image-slide-two {
+  background-image: url("../images/slider/01.png");
+}
+.image-slide-three {
+  background-image: url("../images/slider/01.png");
+}
+
+/*commum*/
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+.button-pill {
+  padding: 0.9rem 2.6rem;
+  border-radius: 2.6rem;
+}
+
+.spacing-text {
+  letter-spacing: 3px;
+}
+
+/*media queries*/
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+  #home header li#logo-list {
+    margin: 0px 0px;
+  }
+  #home header {
+    padding: 21px 0;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+  #home header li#logo-list {
+    margin: 0px 100px;
+  }
+  #home header {
+    padding: 21px 0;
+  }
+}
+/* Extra large devices (large desktops, 1400px and up)*/
+@media (min-width: 1400px) {
+  #home header {
+    padding: 31px 0;
+  }
+  #home header li#logo-list {
+    margin: 0px 160px;
+  }
+}

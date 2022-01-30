@@ -95,6 +95,14 @@ header {
   align-content: center;
 }
 
+.background-footer {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url("../images/footer.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 footer {
   color: white;
 }
@@ -106,6 +114,10 @@ footer {
   color: white;
 }
 
+.footer-link:hover {
+  color: #d4b254;
+}
+
 .footer-title {
   margin-bottom: 2.2rem;
 }
@@ -115,6 +127,31 @@ footer {
   opacity: 0.5;
   color: white;
   margin-bottom: 4px;
+}
+
+.footer-social-link {
+  margin-right: 16px;
+  text-decoration: none;
+}
+
+.side-line {
+  width: calc(50% - 65px);
+  border-bottom: #707070 solid 1px;
+  display: inline-block;
+  opacity: 0.3;
+}
+
+.side-line:first-child {
+  margin-right: 18px;
+}
+
+.side-line:last-child {
+  margin-left: 18px;
+}
+
+.footer-bottom-line {
+  background-color: #707070;
+  opacity: 0.3;
 }
 
 /*commum*/
@@ -140,7 +177,7 @@ h4 {
 
 h5 {
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .color-white {

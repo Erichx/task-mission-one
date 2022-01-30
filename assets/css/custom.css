@@ -65,12 +65,45 @@ header {
   background-image: url("../images/slider/01.png");
 }
 
+.carousel-indicators [data-bs-target] {
+  width: 50px;
+}
+.carousel-indicators .active {
+  background-color: #d4b254;
+}
+#showcase-image {
+  background-image: url("../images/showcase-01.png");
+}
+
+#showcase-text {
+  padding: 35px 70px;
+}
+
 /*commum*/
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
 h1 {
   font-size: 52px;
+}
+h2 {
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.color-white {
+  color: white;
+}
+
+.color-grey {
+  color: #777777;
+}
+.spacing-text {
+  letter-spacing: 3px;
+}
+
+.paragraph-color-primary {
+  color: #d4b254;
 }
 
 .paragraph-shadow {
@@ -83,8 +116,10 @@ h1 {
 .button-main {
   background-color: #d4b254;
   color: white;
+  font-size: 15px;
   border-radius: 30px;
   height: 60px;
+  line-height: 30px;
   box-shadow: 0px 2px 10px #00000033;
   letter-spacing: 3px;
 }
@@ -100,22 +135,16 @@ h1 {
   border-radius: 2.6rem;
 }
 
-.color-white {
-  color: white;
-}
-
-.spacing-text {
-  letter-spacing: 3px;
+.height-50 {
+  height: 50vh;
 }
 
 /*media queries*/
 @media (min-width: 576px) {
 }
-
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
 }
-
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
   #home header li#logo-list {
@@ -125,7 +154,6 @@ h1 {
     padding: 21px 0;
   }
 }
-
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
   #home header li#logo-list {

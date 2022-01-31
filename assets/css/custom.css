@@ -1,21 +1,22 @@
-/*Page*/
+/*Elements*/
 
-#home header * {
+#home nav * {
   font-family: "Roboto", sans-serif;
   font-size: 13px;
 }
-#home header .social-link {
+#home nav .social-link {
   margin-left: 1rem;
   color: white;
 }
-#home header ul li a {
+#home nav ul li a {
   color: white;
 }
-#home header .social-link svg {
+#home nav .social-link svg {
   font-size: 16px;
 }
 
-header {
+nav,
+#home-nav {
   display: block;
   background: transparent;
   overflow: hidden;
@@ -73,11 +74,19 @@ header {
 }
 #showcase-image {
   background-image: url("../images/showcase-01.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   height: 60vh;
 }
 
 #showcase-text {
   padding: 35px 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: flex-start;
 }
 
 #testimonial {
@@ -131,6 +140,8 @@ footer {
 
 .footer-social-link {
   margin-right: 16px;
+  margin-bottom: 16px;
+  display: inline-block;
   text-decoration: none;
 }
 
@@ -154,7 +165,7 @@ footer {
   opacity: 0.3;
 }
 
-/*commum*/
+/*Common*/
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
@@ -177,7 +188,7 @@ h4 {
 
 h5 {
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 .color-white {
@@ -225,13 +236,13 @@ h5 {
 
 .button-pill {
   padding: 0.9rem 2.6rem;
-  border-radius: 2.6rem;
+  border-radius: 6rem;
 }
 
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
-  width: 5vw;
-  height: 5vw;
+  width: 70px;
+  height: 70px;
 }
 
 .carousel-control-prev-icon {
@@ -242,35 +253,139 @@ h5 {
   background-image: url("../images/arrow-right.svg") !important;
 }
 /*media queries*/
-@media (min-width: 576px) {
+@media (max-width: 576px) {
+  /*Elements*/
+
+  #showcase-text {
+    padding: 35px 35px;
+    align-items: center;
+  }
+
+  footer {
+    padding: 0 2rem !important;
+    text-align: center;
+  }
+
+  .footer-title {
+    margin-top: 3rem;
+  }
+
+  #footer-social-links {
+    text-align: center;
+  }
+
+  /*Common*/
 }
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
+  #showcase-text {
+    align-items: center;
+  }
 }
+
+/* Large devices (desktops, 992px and down)*/
+@media (max-width: 992px) {
+  #home-nav {
+    max-width: 100%;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  #logo-list {
+    display: none;
+  }
+  #navbar-main .navbar-nav {
+    padding: 1rem 0rem;
+  }
+  #navbar-main ul li {
+    padding: 5px;
+  }
+  #home-nav div .navbar-brand {
+    transform: scale(0.8);
+  }
+  .navbar-dark .navbar-toggler {
+    color: rgba(255, 255, 255, 0);
+    border-color: rgba(255, 255, 255, 0);
+  }
+  .navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28212, 178, 84, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+  #testimonial div .carousel-inner .carousel-item {
+    padding: 45px 45px;
+  }
+
+  .carousel-control-next-icon {
+    margin-right: 4px;
+  }
+  .carousel-control-prev-icon {
+    margin-left: 4px;
+  }
+
+  .button-main {
+    font-size: 13px;
+    height: auto;
+  }
+
+  h1 {
+    font-size: 42px;
+  }
+  h2 {
+    font-size: 36px;
+    font-weight: 700;
+  }
+  h3 {
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+  h4 {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  h5 {
+    font-size: 18px;
+    font-weight: 700;
+  }
+}
+
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
-  #home header li#logo-list {
+  #home nav li#logo-list {
     margin: 0px 0px;
   }
-  #home header {
+  #home nav {
     padding: 21px 0;
+    border-bottom: solid 1px #ffffff40;
+  }
+  #showcase-text {
+    align-items: baseline;
+  }
+
+  #home-nav div div .navbar-nav {
+    align-items: baseline;
+    justify-content: space-around;
+    width: 100%;
+  }
+  #home-nav div .navbar-brand {
+    display: none;
   }
 }
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
-  #home header li#logo-list {
+  #home nav li#logo-list {
     margin: 0px 100px;
   }
-  #home header {
+  #home nav {
     padding: 21px 0;
   }
 }
 /* Extra large devices (large desktops, 1400px and up)*/
 @media (min-width: 1400px) {
-  #home header {
+  #home nav {
     padding: 31px 0;
   }
-  #home header li#logo-list {
+  #home nav li#logo-list {
     margin: 0px 160px;
   }
 }

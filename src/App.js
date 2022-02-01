@@ -1,37 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
+import './App.css';
 
-    <!--CSS-->
-    <link
-      rel="stylesheet"
-      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css"
-    />
-    <link rel="stylesheet" href="./assets/css/custom.css" />
-    <!--/CSS-->
 
-    <!--JS-->
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
-    <!--/JS-->
-    <title>MTC Home Kitchens</title>
-  </head>
-  <body id="home">
-    <!--Nav-->
+function App() {
+  return (
+    <div  id="home" className="App">
+       {/* --Nav*/}
     <nav
       id="home-nav"
-      class="navbar navbar-expand-lg container navbar-dark"
+      className="navbar navbar-expand-lg container navbar-dark"
       aria-label="Tenth navbar example"
     >
-      <div class="container-fluid p-0">
-        <a class="navbar-brand" href="#">
+      <div className="container-fluid p-0">
+        <a className="navbar-brand" href="#">
           <img
             src="assets/images/logo-white.svg"
             alt="MHK - Home"
@@ -39,7 +21,7 @@
           />
         </a>
         <button
-          class="navbar-toggler collapsed"
+          className="navbar-toggler collapsed"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbar-main"
@@ -47,52 +29,52 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div class="navbar-collapse collapse" id="navbar-main">
-          <ul class="navbar-nav">
-            <li class="nav-item nav-social">
-              <div class="nav-link">
+        <div className="navbar-collapse collapse" id="navbar-main">
+          <ul className="navbar-nav">
+            <li className="nav-item nav-social">
+              <div className="nav-link">
                 <a
-                  class="social-link text-decoration-none"
+                  className="social-link text-decoration-none"
                   href="http://"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i class="fab fa-facebook-f"></i>
+                  <i className="fab fa-facebook-f"></i>
                 </a>
                 <a
-                  class="social-link text-decoration-none"
+                  className="social-link text-decoration-none"
                   href="http://"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i class="fab fa-twitter"></i>
+                  <i className="fab fa-twitter"></i>
                 </a>
                 <a
-                  class="social-link text-decoration-none"
+                  className="social-link text-decoration-none"
                   href="http://"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i class="fab fa-instagram"></i>
+                  <i className="fab fa-instagram"></i>
                 </a>
               </div>
             </li>
 
-            <li class="nav-item">
+            <li className="nav-item">
               <a
                 href="#"
-                class="nav-link text-uppercase spacing-text px-3"
+                className="nav-link text-uppercase spacing-text px-3"
                 title="Shop"
                 >Shop</a
               >
             </li>
-            <li class="nav-item">
+            <li className="nav-item">
               <a
                 href="#"
-                class="nav-link text-uppercase spacing-text px-3"
+                className="nav-link text-uppercase spacing-text px-3"
                 title="Play My Kitchen"
                 >Play My Kitchen</a
               >
@@ -104,29 +86,29 @@
                 tilte="MHK - Home"
               />
             </li>
-            <li class="nav-item">
+            <li className="nav-item">
               <a
                 href="#"
-                class="nav-link text-uppercase spacing-text px-3"
+                className="nav-link text-uppercase spacing-text px-3"
                 title="About Us"
                 >About Us</a
               >
             </li>
-            <li class="nav-item">
+            <li className="nav-item">
               <a
                 href="#"
-                class="nav-link text-uppercase spacing-text px-3"
+                className="nav-link text-uppercase spacing-text px-3"
                 title="Gallery"
                 >Gallery</a
               >
             </li>
 
-            <li class="nav-item nav-my-order">
+            <li className="nav-item nav-my-order">
               <button
                 type="button"
-                class="btn btn-outline-white button-pill text-uppercase"
+                className="btn btn-outline-white button-pill text-uppercase"
               >
-                My Order <i class="fas fa-shopping-cart"></i>
+                My Order <i className="fas fa-shopping-cart"></i>
               </button>
             </li>
           </ul>
@@ -134,16 +116,16 @@
       </div>
     </nav>
 
-    <!--/Nav-->
+    {/* --/Nav*/}
     <main>
-      <!-- Slider  -->
-      <div id="home-carousel" class="carousel slide">
-        <div class="carousel-indicators">
+      {/* -- Slider  */}
+      <div id="home-carousel" className="carousel slide">
+        <div className="carousel-indicators">
           <button
             type="button"
             data-bs-target="#home-carousel"
             data-bs-slide-to="0"
-            class="active"
+            className="active"
             aria-current="true"
             aria-label="Slide 1"
           ></button>
@@ -160,20 +142,20 @@
             aria-label="Slide 3"
           ></button>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active background-slider image-slide-one">
-            <div class="container">
-              <div class="text-center color-white col-md-12 col-xl-8 col-lg-10">
-                <p class="spacing-text text-uppercase paragraph-shadow">
+        <div className="carousel-inner">
+          <div className="carousel-item active background-slider image-slide-one">
+            <div className="container">
+              <div className="text-center color-white col-md-12 col-xl-8 col-lg-10">
+                <p className="spacing-text text-uppercase paragraph-shadow">
                   Design and order your new kitchen online today
                 </p>
-                <h2 class="title-shadow">
+                <h2 className="title-shadow">
                   Bespoke & made to measure handmade kitchen design
                 </h2>
 
                 <p>
                   <a
-                    class="btn btn-lg button-pill button-main text-uppercase mt-5"
+                    className="btn btn-lg button-pill button-main text-uppercase mt-5"
                     href="#"
                     >Order Now</a
                   >
@@ -181,19 +163,19 @@
               </div>
             </div>
           </div>
-          <div class="carousel-item background-slider image-slide-two">
-            <div class="container">
-              <div class="text-center color-white col-md-8">
-                <p class="spacing-text text-uppercase paragraph-shadow">
+          <div className="carousel-item background-slider image-slide-two">
+            <div className="container">
+              <div className="text-center color-white col-md-8">
+                <p className="spacing-text text-uppercase paragraph-shadow">
                   Design and order your new kitchen online today
                 </p>
-                <h2 class="title-shadow">
+                <h2 className="title-shadow">
                   Bespoke & made to measure handmade kitchen design
                 </h2>
 
                 <p>
                   <a
-                    class="btn btn-lg button-pill button-main text-uppercase mt-5"
+                    className="btn btn-lg button-pill button-main text-uppercase mt-5"
                     href="#"
                     >Order Now</a
                   >
@@ -201,19 +183,19 @@
               </div>
             </div>
           </div>
-          <div class="carousel-item background-slider image-slide-three">
-            <div class="container">
-              <div class="text-center color-white col-md-8">
-                <p class="spacing-text text-uppercase paragraph-shadow">
+          <div className="carousel-item background-slider image-slide-three">
+            <div className="container">
+              <div className="text-center color-white col-md-8">
+                <p className="spacing-text text-uppercase paragraph-shadow">
                   Design and order your new kitchen online today
                 </p>
-                <h2 class="title-shadow">
+                <h2 className="title-shadow">
                   Bespoke & made to measure handmade kitchen design
                 </h2>
 
                 <p>
                   <a
-                    class="btn btn-lg button-pill button-main text-uppercase mt-5"
+                    className="btn btn-lg button-pill button-main text-uppercase mt-5"
                     href="#"
                     >Order Now</a
                   >
@@ -223,59 +205,59 @@
           </div>
         </div>
       </div>
-      <!-- /Slider  -->
+      {/* -- /Slider  */}
 
-      <!-- Showcase  -->
-      <div class="container-fluid p-0">
-        <div class="row g-0">
-          <div id="showcase-image" class="col-lg-6 col-sm-12 lg-block"></div>
-          <div id="showcase-text" class="col-xl-5 col-lg-6 col-md-12 col-sm-12">
-            <p class="paragraph-color-primary spacing-text text-uppercase">
+      {/* -- Showcase  */}
+      <div className="container-fluid p-0">
+        <div className="row g-0">
+          <div id="showcase-image" className="col-lg-6 col-sm-12 lg-block"></div>
+          <div id="showcase-text" className="col-xl-5 col-lg-6 col-md-12 col-sm-12">
+            <p className="paragraph-color-primary spacing-text text-uppercase">
               Quality Craftmanship from build to delivery
             </p>
             <h3>Discover the beauty of a handmade kitchen</h3>
-            <p class="color-grey">
+            <p className="color-grey">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
               eget est sit amet sapien venenatis maximus vel in urna. Nam mauris
               arcu, feugiat in finibus vitae, sollicitudin id purus. Ut
               imperdiet, magna eu pharetra tincidunt, mauris purus ultrices.
             </p>
             <a
-              class="btn btn-lg button-pill button-main text-uppercase mt-5"
+              className="btn btn-lg button-pill button-main text-uppercase mt-5"
               href="#"
               >About Us</a
             >
           </div>
         </div>
       </div>
-      <!-- /Showcase  -->
+      {/* -- /Showcase  */}
 
-      <!-- /Testimony  -->
+      {/* -- /Testimony  */}
       <div id="testimonial">
-        <div class="container p-0">
-          <div id="testimonial-slider" class="carousel slide">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="container">
-                  <div class="col-xl-6 col-lg-6 col-md-8 text-center">
+        <div className="container p-0">
+          <div id="testimonial-slider" className="carousel slide">
+            <div className="carousel-inner">
+              <div className="carousel-item active">
+                <div className="container">
+                  <div className="col-xl-6 col-lg-6 col-md-8 text-center">
                     <p
-                      class="paragraph-color-primary spacing-text text-uppercase"
+                      className="paragraph-color-primary spacing-text text-uppercase"
                     >
                       What Our Customers Say
                     </p>
                     <h4>
                       Over 45 years experience designing handmade kitchens
                     </h4>
-                    <p class="color-grey">
+                    <p className="color-grey">
                       Since my first contact I have received a very high level
                       of customer service and advice with my kitchen plans. Ben
                       responded very quickly to all of my emails and delivery of
                       the kitchen was as planned.
                     </p>
-                    <p class="color-grey">Jane, Dundee</p>
+                    <p className="color-grey">Jane, Dundee</p>
                     <p>
                       <a
-                        class="btn btn-lg button-pill button-main text-uppercase mt-5"
+                        className="btn btn-lg button-pill button-main text-uppercase mt-5"
                         href="#"
                         >Frequently Asked Questions</a
                       >
@@ -283,27 +265,27 @@
                   </div>
                 </div>
               </div>
-              <div class="carousel-item">
-                <div class="container">
-                  <div class="col-xl-6 col-lg-6 col-md-8 text-center">
+              <div className="carousel-item">
+                <div className="container">
+                  <div className="col-xl-6 col-lg-6 col-md-8 text-center">
                     <p
-                      class="paragraph-color-primary spacing-text text-uppercase"
+                      className="paragraph-color-primary spacing-text text-uppercase"
                     >
                       What Our Customers Say
                     </p>
                     <h4>
                       Over 35 years experience designing handmade kitchens
                     </h4>
-                    <p class="color-grey">
+                    <p className="color-grey">
                       Since my first contact I have received a very high level
                       of customer service and advice with my kitchen plans. Ben
                       responded very quickly to all of my emails and delivery of
                       the kitchen was as planned.
                     </p>
-                    <p class="color-grey">Jane, Dundee</p>
+                    <p className="color-grey">Jane, Dundee</p>
                     <p>
                       <a
-                        class="btn btn-lg button-pill button-main text-uppercase mt-5"
+                        className="btn btn-lg button-pill button-main text-uppercase mt-5"
                         href="#"
                         >Frequently Asked Questions</a
                       >
@@ -313,67 +295,67 @@
               </div>
             </div>
             <button
-              class="carousel-control-prev"
+              className="carousel-control-prev"
               type="button"
               data-bs-target="#testimonial-slider"
               data-bs-slide="prev"
             >
               <span
-                class="carousel-control-prev-icon primary"
+                className="carousel-control-prev-icon primary"
                 aria-hidden="true"
               ></span>
-              <span class="visually-hidden">Previous</span>
+              <span className="visually-hidden">Previous</span>
             </button>
             <button
-              class="carousel-control-next"
+              className="carousel-control-next"
               type="button"
               data-bs-target="#testimonial-slider"
               data-bs-slide="next"
             >
               <span
-                class="carousel-control-next-icon"
+                className="carousel-control-next-icon"
                 aria-hidden="true"
               ></span>
-              <span class="visually-hidden">Next</span>
+              <span className="visually-hidden">Next</span>
             </button>
           </div>
         </div>
       </div>
-      <!-- /Testimony  -->
-      <!-- /Gallery  -->
+      {/* -- /Testimony  */}
+      {/* -- /Gallery  */}
 
-      <div class="container px-4 py-3" id="gallery">
-        <h4 class="pb-2 pt-5 text-center">Customer Gallery</h4>
-        <div class="row row-cols-1 row-cols-lg-4 align-items-stretch g-4 py-5">
-          <div class="col-xl-3 col-lg-3 col-md-6">
-            <div id="thumb-01" class="card h-100 overflow-hidden">
+      <div className="container px-4 py-3" id="gallery">
+        <h4 className="pb-2 pt-5 text-center">Customer Gallery</h4>
+        <div className="row row-cols-1 row-cols-lg-4 align-items-stretch g-4 py-5">
+          <div className="col-xl-3 col-lg-3 col-md-6">
+            <div id="thumb-01" className="card h-100 overflow-hidden">
               <img src="./assets/images/gallery/01.png" alt="" />
             </div>
           </div>
 
-          <div class="col-xl-3 col-lg-3 col-md-6">
-            <div id="thumb-02" class="card h-100 overflow-hidden">
+          <div className="col-xl-3 col-lg-3 col-md-6">
+            <div id="thumb-02" className="card h-100 overflow-hidden">
               <img src="./assets/images/gallery/02.png" alt="" />
             </div>
           </div>
 
-          <div class="col-xl-3 col-lg-3 col-md-6">
-            <div id="thumb-03" class="card h-100 overflow-hidden">
+          <div className="col-xl-3 col-lg-3 col-md-6">
+            <div id="thumb-03" className="card h-100 overflow-hidden">
               <img src="./assets/images/gallery/03.png" alt="" />
             </div>
           </div>
 
-          <div class="col-xl-3 col-lg-3 col-md-6">
-            <div id="thumb-04" class="card h-100 overflow-hidden">
+          <div className="col-xl-3 col-lg-3 col-md-6">
+            <div id="thumb-04" className="card h-100 overflow-hidden">
               <img src="./assets/images/gallery/04.png" alt="" />
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col text-center">
+        <div className="row">
+          <div className="col text-center">
             <p>
               <a
-                class="btn btn-lg button-pill button-main text-uppercase mt-5"
+                className="btn btn-lg button-pill button-main text-uppercase mt-5"
                 href="#"
                 >View More</a
               >
@@ -382,111 +364,111 @@
         </div>
       </div>
 
-      <!-- /Gallery  -->
+      {/* -- /Gallery  */}
 
-      <!-- /Footer  -->
-      <div class="py-3 background-footer">
-        <footer class="container pt-4">
-          <div class="row align-self-center justify-content-center">
-            <div class="col-12 text-center mb-4">
-              <div class="side-line"></div>
+      {/* -- /Footer  */}
+      <div className="py-3 background-footer">
+        <footer className="container pt-4">
+          <div className="row align-self-center justify-content-center">
+            <div className="col-12 text-center mb-4">
+              <div className="side-line"></div>
               <img
                 src="assets/images/logo-white.svg"
                 alt="MHK - Home"
                 tilte="MHK - Home"
               />
-              <div class="side-line"></div>
+              <div className="side-line"></div>
             </div>
-            <div class="col-md-12 col-xl-8 col-lg-12 mt-3">
-              <div class="row">
-                <div class="col-md-3 col-sm-6 col-xs-6">
-                  <h5 class="footer-title">About</h5>
+            <div className="col-md-12 col-xl-8 col-lg-12 mt-3">
+              <div className="row">
+                <div className="col-md-3 col-sm-6 col-xs-6">
+                  <h5 className="footer-title">About</h5>
 
-                  <ul class="list-unstyled text-small">
-                    <li class="mb-2">
+                  <ul className="list-unstyled text-small">
+                    <li className="mb-2">
                       <a
-                        class="footer-link spacing-text text-decoration-none"
+                        className="footer-link spacing-text text-decoration-none"
                         href="#"
                         >Shop</a
                       >
                     </li>
-                    <li class="mb-2">
+                    <li className="mb-2">
                       <a
-                        class="footer-link spacing-text text-decoration-none"
+                        className="footer-link spacing-text text-decoration-none"
                         href="#"
                         >Plan My Kitchen</a
                       >
                     </li>
-                    <li class="mb-2">
+                    <li className="mb-2">
                       <a
-                        class="footer-link spacing-text text-decoration-none"
+                        className="footer-link spacing-text text-decoration-none"
                         href="#"
                       >
                         About Us</a
                       >
                     </li>
-                    <li class="mb-2">
+                    <li className="mb-2">
                       <a
-                        class="footer-link spacing-text text-decoration-none"
+                        className="footer-link spacing-text text-decoration-none"
                         href="#"
                         >Gallery</a
                       >
                     </li>
                   </ul>
                 </div>
-                <div class="col-md-3 col-sm-6 col-xs-6">
-                  <h5 class="footer-title">Service</h5>
-                  <ul class="list-unstyled text-small">
-                    <li class="mb-2">
+                <div className="col-md-3 col-sm-6 col-xs-6">
+                  <h5 className="footer-title">Service</h5>
+                  <ul className="list-unstyled text-small">
+                    <li className="mb-2">
                       <a
-                        class="footer-link spacing-text text-decoration-none"
+                        className="footer-link spacing-text text-decoration-none"
                         href="#"
                         >FAQ</a
                       >
                     </li>
-                    <li class="mb-2">
+                    <li className="mb-2">
                       <a
-                        class="footer-link spacing-text text-decoration-none"
+                        className="footer-link spacing-text text-decoration-none"
                         href="#"
                         >Contact</a
                       >
                     </li>
-                    <li class="mb-2">
+                    <li className="mb-2">
                       <a
-                        class="footer-link spacing-text text-decoration-none"
+                        className="footer-link spacing-text text-decoration-none"
                         href="#"
                         >How to Buy</a
                       >
                     </li>
-                    <li class="mb-2">
+                    <li className="mb-2">
                       <a
-                        class="footer-link spacing-text text-decoration-none"
+                        className="footer-link spacing-text text-decoration-none"
                         href="#"
                         >Downloads</a
                       >
                     </li>
                   </ul>
                 </div>
-                <div class="col-md-3 col-sm-6 col-xs-6">
-                  <h5 class="footer-title">Info</h5>
-                  <ul class="list-unstyled text-small">
-                    <li class="mb-2">
+                <div className="col-md-3 col-sm-6 col-xs-6">
+                  <h5 className="footer-title">Info</h5>
+                  <ul className="list-unstyled text-small">
+                    <li className="mb-2">
                       <a
-                        class="footer-link spacing-text text-decoration-none"
+                        className="footer-link spacing-text text-decoration-none"
                         href="#"
                         >Delivery</a
                       >
                     </li>
-                    <li class="mb-2">
+                    <li className="mb-2">
                       <a
-                        class="footer-link spacing-text text-decoration-none"
+                        className="footer-link spacing-text text-decoration-none"
                         href="#"
                         >Terms</a
                       >
                     </li>
-                    <li class="mb-2">
+                    <li className="mb-2">
                       <a
-                        class="footer-link spacing-text text-decoration-none"
+                        className="footer-link spacing-text text-decoration-none"
                         href="#"
                         >Privacy</a
                       >
@@ -495,11 +477,11 @@
                 </div>
                 <div
                   id="footer-social-links"
-                  class="col-md-3 col-sm-6 col-xs-6"
+                  className="col-md-3 col-sm-6 col-xs-6"
                 >
-                  <h5 class="footer-title">Follow</h5>
+                  <h5 className="footer-title">Follow</h5>
                   <a
-                    class="footer-social-link"
+                    className="footer-social-link"
                     href="http://"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -507,7 +489,7 @@
                     <img src="assets/images/social/facebook.svg" />
                   </a>
                   <a
-                    class="footer-social-link"
+                    className="footer-social-link"
                     href="http://"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -515,7 +497,7 @@
                     <img src="assets/images/social/twitter.svg" />
                   </a>
                   <a
-                    class="footer-social-link"
+                    className="footer-social-link"
                     href="http://"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -524,21 +506,24 @@
                   </a>
                 </div>
 
-                <p class="footer-text text-center mt-5">
+                <p className="footer-text text-center mt-5">
                   Copyright Online MTC Home Kitchens 2018 - All rights reserved.
                 </p>
-                <p class="footer-text text-center">
+                <p className="footer-text text-center">
                   Responsive website design, Development & Hosting by mtc.
                 </p>
               </div>
             </div>
-            <div class="col-12 mt-5 mb-5">
-              <hr class="footer-bottom-line" />
+            <div className="col-12 mt-5 mb-5">
+              <hr className="footer-bottom-line" />
             </div>
           </div>
         </footer>
       </div>
-      <!-- /Footer  -->
+      {/* -- /Footer  */}
     </main>
-  </body>
-</html>
+    </div>
+  );
+}
+
+export default App;

@@ -1,13 +1,19 @@
 import React from "react";
 
 function Showcase() {
-    return (
-        <React.Fragment>
-            {/* -- Showcase  */}
+  return (
+    <React.Fragment>
+      {/* -- Showcase  */}
       <div className="container-fluid p-0">
         <div className="row g-0">
-          <div id="showcase-image" className="col-lg-6 col-sm-12 lg-block"></div>
-          <div id="showcase-text" className="col-xl-5 col-lg-6 col-md-12 col-sm-12">
+          <div
+            id="showcase-image"
+            className="col-lg-6 col-sm-12 lg-block"
+          ></div>
+          <div
+            id="showcase-text"
+            className="col-xl-5 col-lg-6 col-md-12 col-sm-12"
+          >
             <p className="paragraph-color-primary spacing-text text-uppercase">
               Quality Craftmanship from build to delivery
             </p>
@@ -20,15 +26,15 @@ function Showcase() {
             </p>
             <a
               className="btn btn-lg button-pill button-main text-uppercase mt-5"
-              href="#"
-              >About Us</a
+              href="/showcase"
             >
+              About Us
+            </a>
           </div>
         </div>
       </div>
-      {/* -- /Showcase  */}
-        </React.Fragment>
-    )
+      {/*  Showcase  */}
+    </React.Fragment>
+  );
 }
 export default Showcase;
- 
